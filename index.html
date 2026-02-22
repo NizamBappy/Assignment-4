@@ -14,10 +14,56 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Assignment-4</title>
+    <style>
+        *{
+            font-family: "Inter", sans-serif;
+        }
+    </style>
 
 </head>
 <body>
+    <!-- <header>
+        <h1>Job Application Tracker</h1>
+
+        <div>
+            <div>
+                <p>Total</p>
+                <p>0</p>
+            </div>
+            <div>
+                <p>Interview</p>
+                <p>0</p>
+            </div>
+            <div>
+                <p>Rejected</p>
+                <p>0</p>
+            </div>
+        </div>
+    </header> -->
+    <header class="w-[80%] mx-auto">
+        <h1 class="text-[2rem] font-bold text-[#002C5C]">Job Application Tracker</h1>
+        <div class="grid grid-cols-3 gap-5 " >
+
+            <div class=" bg-[#f1f2f4] text-2xl font-bold p-4 rounded-xl shadow">
+                <p>Total</p>
+                <p id="total" class="text-[#002C5C] ">0</p>
+            </div>
+            <div class=" bg-[#f1f2f4] text-2xl font-bold p-4 rounded-xl shadow">
+                <p>Interview</p>
+                <p id="total" class="text-green-600">0</p>
+            </div>
+            <div class=" bg-[#f1f2f4] text-2xl  font-bold p-4 rounded-xl shadow">
+                <p>Rejected</p>
+                <p id="total" class="text-red-600">0</p>
+            </div>
+            
+        </div>
+    </header>
+
     
+
+    
+
     <script src="./script.js"></script>
 </body>
 </html>
