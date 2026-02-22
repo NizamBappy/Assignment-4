@@ -43,4 +43,3 @@ function toggolBtn(id){
     selected.classList.add('bg-blue-600', 'text-white')
 
 }
-toggolBtn();
