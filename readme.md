@@ -37,33 +37,33 @@ Answer:
             <section id="bubbling">
                 <h1 id="bubbling-title">Available Jobs</h1>
         
-                <ul id="item-list">
-                    <li id="item-1">Frontend Developer</li>
-                    <li id="item-2">Backend Developer</li>
-                    <li id="item-3">Full Stack Developer</li>
-                    <li id="item-4">UI/UX Designer</li>
+                <ul id="job-list">
+                    <li id="job-1">Frontend Developer</li>
+                    <li id="job-2">Backend Developer</li>
+                    <li id="job-3">Full Stack Developer</li>
+                    <li id="job-4">UI/UX Designer</li>
                 </ul>
             </section>  
             <script>
-                document.getElementById("item-2")
+                document.getElementById("job-2")
                 .addEventListener("click", function() {
-                    console.log("item-2 clicked");
+                    console.log("job-2 clicked");
                 });
-                // output:item-2 clicked
-                //           item-list 
+                // output:job-2 clicked
+                //           job-list 
                 //           bubbling section clicked
                 
-                document.getElementById("item-3")
+                document.getElementById("job-3")
                 .addEventListener("click", function(event) {
-                    console.log("item-3 clicked");
+                    console.log("job-3 clicked");
                     event.stopPropagation();
                 });
-                // output:item-3 clicked
-                document.getElementById("item-list")
+                // output:job-3 clicked
+                document.getElementById("job-list")
                 .addEventListener("click", function() {
-                    console.log("item-list clicked");
+                    console.log("job-list clicked");
                 });
-                // output:item-list clicked
+                // output:job-list clicked
 
                 document.getElementById("bubbling")
                 .addEventListener("click", function() {
@@ -78,10 +78,11 @@ Answer:
 
 Answer:
     Event Delegation is a technique based on event bubbling.It handle events efficiently by attaching a single event listener to a parent element. By using event delegation, can select all child element and then identifying the actual source of the event using the (event.target) property.
+    Why useful:
+        i. Better performance.
+        ii. Work for Dynamic Elements.
+        iii.Clean Code
 
-            .Better performance.
-            .work for Dynamic elements.
-            .clean code.
 
 5.What is the difference between preventDefault() and stopPropagation() methods?
 
