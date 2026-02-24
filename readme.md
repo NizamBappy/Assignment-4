@@ -33,45 +33,45 @@ Answer:
    Event Bubbling is a concept of DOM. It works, when a target element clicked by event handler, the bubble up to its parent element one by one. It will bubbling to reach main document until stop it.
 
    Example:
-    <!-- <body>
-        <section id="bubbling">
-            <h1 id="bubbling-title">Available Jobs</h1>
-    
-            <ul id="item-list">
-                <li id="item-1">Frontend Developer</li>
-                <li id="item-2">Backend Developer</li>
-                <li id="item-3">Full Stack Developer</li>
-                <li id="item-4">UI/UX Designer</li>
-            </ul>
-        </section>  
-        <script>
-            document.getElementById("item-2")
-            .addEventListener("click", function() {
-                console.log("item-2 clicked");
-            });
-            // output:item-2 clicked
-            //           item-list 
-            //           bubbling section clicked
-            
-            document.getElementById("item-3")
-            .addEventListener("click", function(event) {
-                console.log("item-3 clicked");
-                event.stopPropagation();
-            });
-            // output:item-3 clicked
-            document.getElementById("item-list")
-            .addEventListener("click", function() {
-                console.log("item-list clicked");
-            });
-            // output:item-list clicked
+        <body>
+            <section id="bubbling">
+                <h1 id="bubbling-title">Available Jobs</h1>
+        
+                <ul id="item-list">
+                    <li id="item-1">Frontend Developer</li>
+                    <li id="item-2">Backend Developer</li>
+                    <li id="item-3">Full Stack Developer</li>
+                    <li id="item-4">UI/UX Designer</li>
+                </ul>
+            </section>  
+            <script>
+                document.getElementById("item-2")
+                .addEventListener("click", function() {
+                    console.log("item-2 clicked");
+                });
+                // output:item-2 clicked
+                //           item-list 
+                //           bubbling section clicked
+                
+                document.getElementById("item-3")
+                .addEventListener("click", function(event) {
+                    console.log("item-3 clicked");
+                    event.stopPropagation();
+                });
+                // output:item-3 clicked
+                document.getElementById("item-list")
+                .addEventListener("click", function() {
+                    console.log("item-list clicked");
+                });
+                // output:item-list clicked
 
-            document.getElementById("bubbling")
-            .addEventListener("click", function() {
-                console.log("bubbling section clicked");
-            });
-            // output: bubbling section clicked
-        </script>
-    body> -->
+                document.getElementById("bubbling")
+                .addEventListener("click", function() {
+                    console.log("bubbling section clicked");
+                });
+                // output: bubbling section clicked
+            </script>
+        body>
 
 
 4.What is Event Delegation in JavaScript? Why is it useful?
